@@ -33,7 +33,13 @@ def start():
                             print("DM deleted because its empty..")
                             tw.delete_dm(id)
                             #delete dm here
-                 elif "Gengs" in message:
+
+#                     else:
+#                         print("DM will be deleted because does not contains keyword..")
+#                         tw.delete_dm(id)
+#                         #delete dm
+                        
+                    elif "Gengs" in message:
                         #message = message.replace("foodies", "")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
@@ -50,11 +56,11 @@ def start():
                             print("DM deleted because its empty..")
                             tw.delete_dm(id)
                             #delete dm here
-                                                     
+
                     else:
                         print("DM will be deleted because does not contains keyword..")
                         tw.delete_dm(id)
-                        #delete dm
+                        #delete dm    
             dms = list()
 
         else:
